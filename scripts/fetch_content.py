@@ -146,6 +146,9 @@ def main():
     if not api_key:
         raise SystemExit("ANTHROPIC_API_KEY environment variable not set")
 
+    search_calls = sum(1 for block in response.content if block.type == "server_tool_use")
+    print(f"Web searches performed: {search_calls}")
+    
     manifest = load_manifest()
     prompt_template = DAILY_PROMPT if args.mode == "daily" else WEEKLY_PROMPT
     existing_urls = "\n".join(manifest) if manifest else "(none yet)"
