@@ -1,0 +1,22 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Eurodrone Intelligence Tracker</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; }
+    input { width: 100%; padding: 10px; font-size: 16px; box-sizing: border-box; }
+    .result { border-bottom: 1px solid #ddd; padding: 12px 0; }
+    .result h3 { margin: 0 0 4px 0; }
+    .result a { color: #06c; }
+    .meta { color: #666; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>Eurodrone Intelligence Tracker</h1>
+  <input type="text" id="query" placeholder="Search... e.g. 'unit cost overrun'">
+  <div id="results"></div>
+  <script type="module" src="search.js"></script>
+</body>
+</html>
