@@ -24,7 +24,12 @@ KNOWLEDGE_DIR = "knowledge"
 MANIFEST_FILE = "manifest.json"
 MODEL = "claude-sonnet-5"
 
-DAILY_PROMPT = """Search the web for Eurodrone (Airbus-led MALE RPAS program, partners
+DAILY_PROMPT = """
+
+You must use the web_search tool at least once before answering — do not
+rely on your training data, which does not contain current news.
+
+Search the web for Eurodrone (Airbus-led MALE RPAS program, partners
 Dassault and Leonardo, program also referred to as "Male RPAS") news from
 the last 24 hours. Cover commercial, technical, strategic, and financial
 developments.
@@ -44,7 +49,12 @@ items. Each object must have exactly these fields:
 If there is nothing genuinely new, return an empty JSON array: []
 """
 
-WEEKLY_PROMPT = """Search the web for Eurodrone (Airbus-led MALE RPAS program, partners
+WEEKLY_PROMPT = """
+
+You must use the web_search tool at least once before answering — do not
+rely on your training data, which does not contain current news.
+
+Search the web for Eurodrone (Airbus-led MALE RPAS program, partners
 Dassault and Leonardo) news and developments from the last 7 days. Cover
 commercial, technical, strategic, and financial dimensions. In addition to
 news outlets, check parliamentary and defense-procurement sources: German
