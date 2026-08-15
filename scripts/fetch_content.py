@@ -145,9 +145,6 @@ def main():
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         raise SystemExit("ANTHROPIC_API_KEY environment variable not set")
-
-    search_calls = sum(1 for block in response.content if block.type == "server_tool_use")
-    print(f"Web searches performed: {search_calls}")
     
     manifest = load_manifest()
     prompt_template = DAILY_PROMPT if args.mode == "daily" else WEEKLY_PROMPT
@@ -166,6 +163,9 @@ def main():
             "max_uses": 15 if args.mode == "weekly" else 8,
         }],
     )
+
+    search_calls = sum(1 for block in response.content if block.type == "server_tool_use")
+    print(f"Web searches performed: {search_calls}")
 
     # Web-search responses interleave server_tool_use / tool_result blocks
     # with text blocks - concatenate only the text blocks.
