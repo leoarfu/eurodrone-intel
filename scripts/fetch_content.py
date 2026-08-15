@@ -173,6 +173,8 @@ def main():
         block.text for block in response.content if block.type == "text"
     )
 
+    print(f"Raw model output ({len(full_text)} chars): {full_text[:1500]}")
+
     try:
         entries = extract_json_array(full_text)
     except ValueError as e:
