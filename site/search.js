@@ -3,7 +3,7 @@ import { pipeline, cos_sim } from 'https://cdn.jsdelivr.net/npm/@xenova/transfor
 let embedder, index = [];
 
 async function init() {
-  const res = await fetch('../embeddings/index.json');
+  const res = await fetch('./embeddings/index.json');
   index = await res.json();
   embedder = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
 }
