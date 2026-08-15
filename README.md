@@ -1,3 +1,3 @@
 # eurodrone-intel
-eurodrone-intel /n
-From publicly-available data only
+eurodrone-intel | 
+from publicly-available data only
