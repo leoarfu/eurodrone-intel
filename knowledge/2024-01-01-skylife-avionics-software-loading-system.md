@@ -1,0 +1,6 @@
+# Skylife Engineering contracted for Eurodrone avionics software loading system
+Date: 2024-01-01
+Source: Skylife Engineering
+URL: https://skylife-eng.com/en/media/news/skylife-will-develop-the-software-loading-system-for-the-eurodrone-avionics-equipment
+---
+Airbus Spain contracted Spanish firm Skylife Engineering to develop the software loading system for Eurodrone's avionics equipment, marking the company's twenty-fourth external supplier contract on the program and its first under the services category in Spain (source: https://skylife-eng.com/en/media/news/skylife-will-develop-the-software-loading-system-for-the-eurodrone-avionics-equipment). Skylife had previously built comparable software loading capabilities and tools for the A400M military transport, developed over more than twelve years of continued collaboration with Airbus (source: https://skylife-eng.com/en/media/news/skylife-will-develop-the-software-loading-system-for-the-eurodrone-avionics-equipment). The system is described as managing traceability and configuration control for onboard software updates, where incorrect configuration during loading is flagged as a potential safety risk (source: https://skylife-eng.com/en/media/news/skylife-will-develop-the-software-loading-system-for-the-eurodrone-avionics-equipment).

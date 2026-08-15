@@ -1,0 +1,6 @@
+# Indra developing Ku/Ka-band satellite communications terminal for Eurodrone
+Date: 2025-03-18
+Source: Indra Group
+URL: https://www.indragroup.com/en/news/indra-developing-satellite-communications-system-long-endurance-defence-drones-future
+---
+Indra is developing a new satellite communications terminal sized for medium and large RPAS platforms including Eurodrone, transmitting across both civilian and military Ku and Ka bands to give operators flexibility across different satellite constellations by region (source: https://www.indragroup.com/en/news/indra-developing-satellite-communications-system-long-endurance-defence-drones-future). The terminal includes a robust protection mode against interference and is designed to eliminate the keyhole effect that complicates geostationary satellite connectivity near the equator (source: https://www.indragroup.com/en/news/indra-developing-satellite-communications-system-long-endurance-defence-drones-future). Indra is separately the second-largest avionics supplier for Eurofighter and national coordinator for Spain's role in the now-collapsed FCAS program, giving it established standing in European military air-combat systems integration (source: https://www.indragroup.com/en/news/indra-developing-satellite-communications-system-long-endurance-defence-drones-future).
