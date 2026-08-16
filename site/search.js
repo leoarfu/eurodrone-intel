@@ -23,12 +23,25 @@ document.getElementById('query').addEventListener('input', async (e) => {
   const q = e.target.value.trim();
   const resultsDiv = document.getElementById('results');
   if (!q) { resultsDiv.innerHTML = ''; return; }
-  const results = await search(q);
-  resultsDiv.innerHTML = results.map(r => `
+
+  const matches = await search(q);
+  if (matches.length === 0) {
+    resultsDiv.innerHTML = '<p>No matching entries found.</p>';
+    return;
+  }
+
+  resultsDiv.innerHTML = '<p>Thinking...</p>';
+  const res = await fetch('https://eurodrone-worker.didier08018.workers.dev', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ query: q, excerpts: matches }),
+  });
+  const { answer } = await res.json();
+
+  resultsDiv.innerHTML = `<div class="answer">${answer}</div>` + matches.map(r => `
     <div class="result">
       <h3>${r.title}</h3>
       <div class="meta">${r.date} — <a href="${r.url}" target="_blank">${r.source}</a></div>
-      <p>${r.excerpt}</p>
     </div>
   `).join('');
 });
