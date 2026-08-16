@@ -16,7 +16,7 @@ async function search(query) {
     score: cos_sim(qVec, item.vector)
   }));
   scored.sort((a, b) => b.score - a.score);
-  return scored.slice(0, 8);
+  return scored.filter(r => r.score > 0.35).slice(0, 5);
 }
 
 document.getElementById('query').addEventListener('input', async (e) => {
